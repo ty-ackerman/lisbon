@@ -8,6 +8,7 @@ $grey: #777;
 $white: #fff;
 $footer-black: #100f0f;
 $footer-dark: #1b1b1b;
+$header-light: #fafafa;
 
 // TRANSITIONS
 $transition: .3s ease-in all;
@@ -47,6 +48,6 @@ $transition: .3s ease-in all;
 // Active pink button with white font
 
 @mixin active () {
-    background:none;
+    background:$pink;
     border: $pink solid 2px;
 }

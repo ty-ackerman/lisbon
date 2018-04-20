@@ -67,7 +67,8 @@ header .scroll {
             }
 
             &__list-item9 {
-                background:$pink;
+                background:none;
+                border:2px $pink solid;
                 height:44px;
                 width:43px;
                 border-radius:50%;
@@ -114,10 +115,11 @@ header .scroll {
         }
         &__buy {
             text-transform: uppercase;
+            border:$pink solid 2px;
             font-weight:700;
             font-size:15px;
             color:$white;
-            background:$pink;
+            background:none;
             padding:14px 50px;
             border-radius:5px;
             transition: $transition;
@@ -126,5 +128,10 @@ header .scroll {
             }
         }    
     }
+}
+
+.lower-header {
+    background:$header-light;
+    color:$black;
 }
 
