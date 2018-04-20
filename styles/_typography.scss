@@ -1,0 +1,30 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin:0;
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    @include fontSize(36);
+    font-weight:800;
+}
+
+.header-2--light {
+    font-weight:700;
+}
+
+a {
+    text-decoration:none;
+}
