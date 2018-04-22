@@ -66,7 +66,7 @@ header .scroll {
                 position:relative;
                 font-weight: 600;
                 &:not(.header-top__nav__list__list-item9__link):before {
-                    @include underlineA ();
+                    @include underlineA ($pink);
                 }
                 &:hover:before {
                     @include underlineHover ();

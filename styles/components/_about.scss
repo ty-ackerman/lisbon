@@ -7,11 +7,6 @@
 
 .about__text-container {
     text-align:center;
-    .describe {
-       color:$dark;
-       @include fontSize(17);
-       font-style:italic;
-    }
     &:after {
         content:"";
         height:1px;
@@ -62,6 +57,7 @@
                 @include fontSize(14);
                 &:hover {
                     color:$purple;
+                    font-weight:500;
                 }
             }
 

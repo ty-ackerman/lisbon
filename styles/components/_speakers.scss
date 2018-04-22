@@ -1,0 +1,86 @@
+.speakers {
+    background:$white;
+    margin:120px 0;
+    &__text-container {
+        &:after {
+            content:"";
+            width:63px;
+            background:$pink;
+            height:1px;
+            display:block;
+            margin: 40px auto;
+        }
+    }
+
+    &__gallery{
+        display:flex;
+        flex-flow:row wrap;
+        margin-bottom:50px;
+        &__quarter:not(.speakers__gallery__quarter4) {
+            margin-right:20px;
+        }
+        &__quarter {
+           border-radius:5px;
+           width:calc(25% - (60px / 4));
+           display: inline-block;
+           box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.04);
+           transition:$transition;
+           img {
+               width:100%;
+               border-radius:5px 5px 0 0;
+           }
+           &:hover {
+               background: $purple;
+               box-shadow: 10px 2px 18px 5px rgba(0, 0, 0, 0.2);
+                transform:scale(1.02);
+                color:$white;
+           }
+           &__text-container {
+               text-align:center;
+               padding:15px;
+               h4 {
+                   font-family: $raleway;
+                   font-weight: 600;
+                   @include fontSize(16);
+               }
+               p {
+                   @include fontSize(14);
+                   font-weight: 400;
+
+               }
+           }
+
+        }
+
+    }
+}
+
+.circle-container {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items: center;
+    &__circle {
+        width:12px;
+        height:12px;
+        border-radius:50%;
+        background:$purple;
+        display: inline-block;
+        &--pink {
+            background: $pink;
+            width:14px;
+            height:14px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin:0 5px;
+            &__inner-circle {
+                background: $pink;
+                width:12px;
+                height:12px;
+                border:$white 1px solid;
+                border-radius:50%;
+            }
+        }
+    }
+}

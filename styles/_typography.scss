@@ -32,3 +32,10 @@ h2 {
 a {
     text-decoration:none;
 }
+
+p.describe {
+    color:$dark;
+    @include fontSize(17);
+    font-style:italic;
+    text-align:center;
+}

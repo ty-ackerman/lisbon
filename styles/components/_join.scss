@@ -1,0 +1,51 @@
+.join {
+    background-image:url(../images/pattern.png);
+    padding:120px 0;
+
+    &__text-container {
+        width:80%;
+        margin:0 auto;
+        color:$white;
+        h2 {
+            color:$white;
+        }
+        &__text {
+            @include fontSize(14);
+            font-weight: 200;
+            text-align:center;
+            padding:30px 0;
+        }
+    }
+    &__form {
+        margin:0 auto;
+        &__type-email {
+            background:transparent;
+            border-radius:5px 0 0 5px;
+            border:solid 1px $white;
+            color:$white;
+            @include fontSize(14);
+            padding:10px 0 10px 15px;
+            line-height:25px;
+            width:500px;
+            border-right:none;
+        }
+        &__subscribe {
+            background: $pink;
+            border-radius:0 5px 5px 0;
+            align-self: 15px;
+            font-weight: 700;
+            padding:10.3px 15px 10.75px 15px;
+            text-align:center;
+            border:1px solid $pink;
+            color:$white;
+            text-transform: uppercase;
+            font-family: $raleway;
+            line-height:24px;
+            width:140px;
+            &:active {
+                background:none;;
+                border:$white solid 1px;
+            }
+        }
+    }
+}
