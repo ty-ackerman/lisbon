@@ -14,11 +14,15 @@ p {
 h1,
 h2 {
     font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-align:center;
+
 }
 
 h2 {
     @include fontSize(36);
     font-weight:800;
+    color:$dark;
 }
 
 .header-2--light {

@@ -13,13 +13,16 @@ $header-light: #fafafa;
 // TRANSITIONS
 $transition: .3s ease-in all;
 
+// FONTS
+$raleway: 'Raleway', sans-serif;
+
 
 // MIXINS
 
 // Font Size
 @mixin fontSize ($sizeValue) {
-    font-size:$sizeValue * 1px;
-    font-size: ($sizeValue/10) * 1rem;
+    font-size:$sizeValue * 1px * .75;
+    font-size: ($sizeValue/10) * 1rem * .75;
 }
 
 // Underline Transition
