@@ -34,7 +34,7 @@ a {
 }
 
 p.describe {
-    color:$dark;
+    color:$grey;
     @include fontSize(17);
     font-style:italic;
     text-align:center;

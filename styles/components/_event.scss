@@ -1,0 +1,131 @@
+.event {
+    background:$header-light;
+    padding:120px 0;
+    &__text-container {
+        &::after {
+            @include line($pink);
+        }
+    }
+}
+
+.event__content {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    &__table {
+        width:25%;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        &__container {
+            p.month {
+                color:#b7b7b7;
+                @include fontSize(13);
+                font-weight: 400;
+            }
+            p.day {
+                color:$black;
+                @include fontSize(18);
+                font-weight: 500;
+            }
+            padding:15px 20px;
+            border:solid 1px #ececec;
+            transition:$transition;
+            &:hover{
+                background: $pink;
+                transform:scale(1.02);
+                box-shadow: 10px 2px 18px 5px rgba(0, 0, 0, 0.2);
+                border:1px solid transparent;
+                p.day {
+                    color:$white;
+                }
+                p.month {
+                    color: #e6e6e6;
+                }
+            }
+        }
+    }
+    &__presenters {
+        width:59%;
+        &__third {
+            margin-bottom:40px;
+            p.name {
+                font-family: $raleway;
+                @include fontSize(14);
+                font-weight: 400;
+                span.time {
+                    margin-left:20px;
+                    color:$grey;
+                    text-transform: uppercase;
+                }
+            }
+            p.event-name {
+                font-family: $raleway;
+                @include fontSize(18);
+               font-weight: 700;
+               padding:10px 0;
+            }
+            p.event-details {
+                color:#666;
+                @include fontSize(13);
+                font-weight: 400;
+            }
+            &1 {
+                position:relative;
+                &::before {
+                    content:"";
+                    background:url(../images/schedule-1.png);
+                    background-size:contain;
+                    background-repeat:no-repeat;
+                    height:82px;
+                    width:82px;
+                    border: #f2f2f2 solid 5px;
+                    border-radius:50%;
+                    display: inline-block;
+                    position:absolute;
+                    left:-110px;
+                    top:50%;
+                    transform: translateY(-50%);
+                }
+            }
+            &2 {
+                position:relative;
+                &::before {
+                    content:"";
+                    background:url(../images/schedule-2.png);
+                    background-size:contain;
+                    background-repeat:no-repeat;
+                    height:82px;
+                    width:82px;
+                    border: #f2f2f2 solid 5px;
+                    border-radius:50%;
+                    display: inline-block;
+                    position:absolute;
+                    left:-110px;
+                    top:50%;
+                    transform: translateY(-50%);
+                }
+            } 
+            &3 {
+                position:relative;
+                &::before {
+                    content:"";
+                    background:url(../images/schedule-3.png);
+                    background-size:contain;
+                    background-repeat:no-repeat;
+                    height:82px;
+                    width:82px;
+                    border: #f2f2f2 solid 5px;
+                    border-radius:50%;
+                    display: inline-block;
+                    position:absolute;
+                    left:-110px;
+                    top:50%;
+                    transform: translateY(-50%);
+                }
+            }   
+        }
+
+    }
+}
+

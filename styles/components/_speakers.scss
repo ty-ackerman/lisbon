@@ -84,3 +84,24 @@
         }
     }
 }
+
+.pricing__options__third__button {
+    font-family:$raleway;
+    color:$white;
+    @include fontSize(15);
+    line-height: 52px;
+    border-radius:5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width:178px;
+    display: block;
+    text-align:center;
+    height:52px;
+    transition:$transition;
+    background: $pink;
+    margin: 0 auto;
+    
+    &:active {
+            background: $dark;
+            }
+}

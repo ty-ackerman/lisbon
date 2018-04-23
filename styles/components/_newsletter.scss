@@ -1,36 +1,26 @@
-.join {
-    background-image:url(../images/pattern.png);
+.newsletter {
+    padding:80px 0;
+    background-image: url(../images/pattern2.png);
     background-size:cover;
-    padding:120px 0;
-
-    &__text-container {
-        width:80%;
-        margin:0 auto;
-        color:$white;
-        h2 {
-            color:$white;
-        }
-        &__text {
-            @include fontSize(14);
-            font-weight: 200;
-            text-align:center;
-            padding:30px 0;
-        }
+    .heading-4 {
+        color:$black;
+        font-weight: 700;
+        @include fontSize(28);
+        font-family: $raleway;
+        text-align:center;
     }
-    &__form {
-        margin:0 auto;
-        &__type-email {
-            background:transparent;
+    form {
+        margin:40px auto 0 auto;
+        .get-email {
             border-radius:5px 0 0 5px;
             border:solid 1px $white;
-            color:$white;
             @include fontSize(14);
             padding:10px 0 10px 15px;
             line-height:25px;
             width:500px;
             border-right:none;
         }
-        &__subscribe {
+        .submit-subscribe {
             background: $pink;
             border-radius:0 5px 5px 0;
             align-self: 15px;
@@ -46,7 +36,8 @@
             transition:$transition;
             &:active {
                 background:none;;
-                border:$white solid 1px;
+                border:$purple solid 1px;
+                color:$purple;
             }
         }
     }

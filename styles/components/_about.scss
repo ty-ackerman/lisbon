@@ -8,12 +8,7 @@
 .about__text-container {
     text-align:center;
     &:after {
-        content:"";
-        height:1px;
-        width:63px;
-        margin:40px auto;
-        display:block;
-        background:$pink;
+        @include line($pink);
     }
 }
 

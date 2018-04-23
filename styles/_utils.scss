@@ -54,3 +54,13 @@ $raleway: 'Raleway', sans-serif;
     background:$pink;
     border: $pink solid 2px;
 }
+
+//::After element stylistic line
+@mixin line($color) {
+    content:"";
+    height:1px;
+    width:63px;
+    margin:40px auto;
+    display:block;
+    background:$color;
+}
