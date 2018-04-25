@@ -13,7 +13,6 @@ header {
 }
 
 .front-page {
-    // height:75vh;
     flex-direction:column;
     display:flex;
     position:relative;
@@ -241,7 +240,6 @@ header .scroll {
                     background:$dark;
                     width:37px;
                     height:45px;
-                    // border:red solid 2px;
                     display: inline-block;
                     color:$white;
                     @include fontSize(20);
@@ -356,8 +354,6 @@ label[for=hamburger] {
         right:30px;
         top:30px;
         z-index:10001;
-        // position:fixed;
-        // text-shadow:1px 1px 1px black;
         text-shadow:
             3px 3px 0 #000,
             -1px -1px 0 #000,  
