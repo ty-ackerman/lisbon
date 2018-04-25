@@ -1,5 +1,8 @@
 .upper-footer {
     background: $footer-dark;
+    @media (max-width:360px) {
+        display:none;
+    }
     
 
     &__third {
@@ -12,6 +15,14 @@
         flex-flow:row wrap;
         justify-content:space-between;
         position: relative;
+        @media (max-width:1165px) {
+            flex-flow:column wrap;
+            align-items: center;
+            margin:0 auto;
+            padding:20px 0;
+            width:360px;
+            align-items: flex-start;
+        }
     }
 }
 
@@ -19,6 +30,13 @@
     display:flex;
     flex-flow: row wrap;
     color: #ababab;
+    
+    @media (max-width:1230px) {
+        @include fontSize(13);
+    }
+    @media (max-width: 1165px) {
+        padding:10px 0;
+    }
     &__image-container {
         background:#2f2f2f;
         width:50px;
@@ -35,6 +53,10 @@
     
     &3 {
         justify-content:flex-end;
+        @media (max-width:1165px) {
+            justify-content: center;
+            align-items: flex-start;
+        }
     }
 }
 
@@ -47,10 +69,20 @@
     top:50%;
     transform:translateY(-50%);
     &--left {
-        left:33.33333%;
+        left:38%;
+        @media (max-width:1600px) {
+            display:none;
+
+        }
+        
     }
     &--right {
-        right:33.33333%;
+        right:38%;
+        @media (max-width:1600px) {
+            display:none;
+
+        }
+        
     }
 
 }
@@ -65,6 +97,9 @@
     justify-content: center;
     align-items: center;
     text-align:center;
+    @media (max-width:840px) {
+        padding:30px 0;
+    }
     &__nav {
         width:70%;
         margin:0 auto;
@@ -74,12 +109,19 @@
             list-style:none;
             display:flex; 
             justify-content:space-between;
+            @media (max-width:840px) {
+                flex-flow:column wrap;
+                margin-right:35px;
+            }
             &__item {
                 text-transform: uppercase;
                 a {
                     color:#ababab;
                     @include fontSize(14);
                     transition:$transition;
+                    @media (min-width: 841px) and(max-width:960px) {
+                        @include fontSize(12);
+                    }
                     &:hover {
                         color:$white;
                     }
@@ -95,6 +137,9 @@
     color:$white;
     @include fontSize(15);
     font-weight: 400;
+    @media (max-width:500px) {
+        @include fontSize(12);
+    }
     span a.name {
         color:$pink;
         transition:$transition;
@@ -108,6 +153,9 @@
     background: $footer-black;
     position:relative;
     margin:0 auto;
+    @media (max-width:360px) {
+        display:none;
+    }
     &1 {
     border:2px solid #ababab;
     outline:10px solid $footer-black;
@@ -116,6 +164,9 @@
     z-index:10;
     height:15px;
     width:15px;
+    @media (max-width:840px) {
+        bottom:387px;
+    }
     }
     &2 {
         background:$footer-black;
@@ -123,7 +174,9 @@
         height:25px;
         bottom:294px;
         z-index:100;
-
+        @media(max-width:840px) {
+            bottom:394px;
+        }
     }
     
     

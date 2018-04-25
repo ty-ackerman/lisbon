@@ -18,37 +18,41 @@
                     <div class="header-top__img-container">
                         <img src="images/logo.png" alt="">
                     </div>
-                    <div class="header-top__nav">
+                    <nav class="header-top__nav">
                         <ul class="header-top__nav__list">
-                            <li class="header-top_nav__list__list-item header-top__nav__list__list-item1">
+                            <input type="checkbox" id="hamburger" name="hamburger">
+                            <li class="header-top__nav__list__list-item header-top__nav__list__list-item1">
                                 <a href="#" class="header-top__nav__list__list-item__link">Home</a>
                             </li>
-                            <li class="header-top_nav__list__list-item header-top__nav__list__list-item2">
+                            <li class="header-top__nav__list__list-item header-top__nav__list__list-item2">
                                 <a href="#" class="header-top__nav__list__list-item__link">About us</a>
                             </li>
-                            <li class="header-top_nav__list__list-item header-top__nav__list__list-item3">
+                            <li class="header-top__nav__list__list-item header-top__nav__list__list-item3">
                                 <a href="#" class="header-top__nav__list__list-item__link">Speakers</a>
                             </li>
-                            <li class="header-top_nav__list__list-item header-top__nav__list__list-item4">
+                            <li class="header-top__nav__list__list-item header-top__nav__list__list-item4">
                                 <a href="#" class="header-top__nav__list__list-item__link">Pages</a>
                             </li>
-                            <li class="header-top_nav__list__list-item header-top__nav__list__list-item5">
+                            <li class="header-top__nav__list__list-item header-top__nav__list__list-item5">
                                 <a href="#" class="header-top__nav__list__list-item__link">Sponsors</a>
                             </li>
-                            <li class="header-top_nav__list__list-item header-top__nav__list__list-item6">
+                            <li class="header-top__nav__list__list-item header-top__nav__list__list-item6">
                                 <a href="#" class="header-top__nav__list__list-item__link">Blog</a>
                             </li>
-                            <li class="header-top_nav__list__list-item header-top__nav__list__list-item7">
+                            <li class="header-top__nav__list__list-item header-top__nav__list__list-item7">
                                 <a href="#" class="header-top__nav__list__list-item__link">Venues</a>
                             </li>
                             <li class="header-top__nav__list__list-item header-top__nav__list__list-item8">
                                 <a href="#" class="header-top__nav__list__list-item__link">Contact Us</a>
                             </li>
-                            <a href="#" class="header-top__nav__list__list-item9__link"><li class="header-top__nav__list__list-item header-top__nav__list__list-item9"><i class="fas fa-search"></i>
+                            <a href="#" class="header-top__nav__list__list-item9__link"><li class="header-top__nav__list__list-item--link header-top__nav__list__list-item9"><i class="fas fa-search"></i>
                                     
                             </li></a>
                         </ul>
-                    </div>
+                    </nav>
+                    <label for="hamburger">
+                        <i class="fa fa-bars"></i>
+                    </label>
                 </section>
                 <section class="header-main">
                     <div class="header-main__container">
@@ -112,14 +116,15 @@
                     </div>
                 </div>
                 <div class="lower-header__third lower-header__third3">
-                    <div class="lower-header__third__button lower-header__third_button">
+                    <div class="lower-header__third__button lower-header__third__button1">
                         <a href="#" class="lower-header__third__button__link lower-header__third__button__link1">Buy Ticket</a>
                     </div>
-                    <div class="lower-header__third lower-header__third">
+                    <div class="lower-header__third__button lower-header__third__button2">
                         <a href="#" class="lower-header__third__button__link lower-header__third__button__link2">See details</a>
                     </div> 
                 </div>
             </div>
+
         </section>
         
     </header>
@@ -130,8 +135,10 @@
                 <p class="describe">Starting your own IT business and picking right niche in less than 20 days</p>
             </div>
             <div class="about__events">
-                <div class="about__events__third about__events__third1">
-                    <img src="images/about-image-3.png" alt="">
+                <div class="about__events__third about__events__third1 clearfix">
+                    <div class="about__events__third__image-container">
+                        <img src="images/about-image-3.png" alt="">
+                    </div>
                     <div class="about__events__third__container">
                         <h5 class="heading-5">Why are we doing this?</h5>
                         <p class="about__events__third__container__details">IT has survived not only five centuries, but also the leap into electronic typesetting.</p>
@@ -139,7 +146,8 @@
                    </div>
                 </div>
                 <div class="about__events__third about__events__third2">
-                    <img src="images/about-image-1.png" alt="">
+                    <div class="about__events__third__image-container">
+                        <img src="images/about-image-1.png" alt=""></div>
                     <div class="about__events__third__container">
                         <h5 class="heading-5">What will you learn?</h5>
                         <p class="about__events__third__container__details">IT has survived not only five centuries, but also the leap into electronic typesetting.</p>
@@ -147,7 +155,8 @@
                     </div>
                 </div>
                 <div class="about__events__third about__events__third3">
-                    <img src="images/about-image-3.png" alt="">
+                    <div class="about__events__third__image-container">
+                        <img src="images/about-image-3.png" alt=""></div>
                     <div class="about__events__third__container">
                         <h5 class="heading-5">What are the benefits?</h5>
                         <p class="about__events__third__container__details">IT has survived not only five centuries, but also the leap into electronic typesetting.</p>
@@ -177,7 +186,7 @@
     <section class="speakers">
         <div class="wrapper">
             <div class="speakers__text-container">
-                <h2 class="header2">Join our event</h2>
+                <h2 class="header2">Our event speakers</h2>
                 <p class="describe">Starting your own IT business and picking right niche in less than 30 days</p>
             </div>
             <div class="speakers__gallery">
@@ -245,6 +254,7 @@
                         <span class="dollar">$</span>35
                         <span class="monthly">/ monthly</span>
                     </p>
+                    <input type="checkbox" id="see-details1">
                     <ul class="pricing__options__third__features">
                         <li class="pricing__options__third__features__item">Clients Support 3 event</li>
                         <li class="pricing__options__third__features__item">Regular Seat & Accomodation</li>
@@ -252,10 +262,15 @@
                         <li class="pricing__options__third__features__item">Free Entrance Materials</li>
     
                     </ul>
-                    <a href="#" class="pricing__options__third__button">See details</a>
+
+
+                    <label for="see-details1" class="pricing__options__third__button see-details-button">See Details</label>
     
                 </div>
                 <div class="pricing__options__third pricing__options__third2">
+                    <div class="pricing__options__third--best">
+                        <p>Best Choice</p>
+                    </div>
                     <div class="pricing__options__third__title-container">
                         <h3 class="header-3">Optimal Plan</h3>
                         <p class="pricing__options__third__title-container__plan">Standard Pricing Plan</p>
@@ -264,6 +279,8 @@
                         <span class="dollar">$</span>60
                         <span class="monthly">/ monthly</span>
                     </p>
+                    <input type="checkbox" id="see-details2">
+
                     <ul class="pricing__options__third__features">
                         <li class="pricing__options__third__features__item">Clients Support 3 event</li>
                         <li class="pricing__options__third__features__item">Regular Seat & Accomodation</li>
@@ -271,7 +288,8 @@
                         <li class="pricing__options__third__features__item">Free Entrance Materials</li>
     
                     </ul>
-                    <a href="#" class="pricing__options__third__button">See details</a>
+
+                    <label for="see-details2" class="pricing__options__third__button see-details-button">See Details</label>
     
                 </div>
                 <div class="pricing__options__third pricing__options__third3">
@@ -283,6 +301,8 @@
                         <span class="dollar">$</span>90
                         <span class="monthly">/ monthly</span>
                     </p>
+                    <input type="checkbox" id="see-details3">
+
                     <ul class="pricing__options__third__features">
                         <li class="pricing__options__third__features__item">Clients Support 3 event</li>
                         <li class="pricing__options__third__features__item">Regular Seat & Accomodation</li>
@@ -290,7 +310,8 @@
                         <li class="pricing__options__third__features__item">Free Entrance Materials</li>
     
                     </ul>
-                    <a href="#" class="pricing__options__third__button">See details</a>
+
+                    <label for="see-details3" class="pricing__options__third__button see-details-button">See Details</label>
     
                 </div>
             </div>
@@ -379,15 +400,21 @@
                             <img src="../images/news-1.png" alt="">
                         </div>
                     </div>
+                    <input type="checkbox" id="menuToggle1">
                     <div class="news__articles__third__bottom news__articles__third__bottom1">
-                        <p class="news__articles__third__bottom__title">River Stumble as Lights</p>
+                        <p class="news__articles__third__bottom__title">Clinching the East</p>
                         <p class="news__articles__third__bottom__author">By David Warner on 25 Apr 2017</p>
                         <p class="news__articles__third__bottom__description">Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
-                        <input type="checkbox" id="menuToggle">
-                        <label for="menuToggle" class="menu-icon">Test</label>
 
+                        <label for="menuToggle1" class="menu-icon news__articles__third__bottom__button">share</label>
+                    </div>
+
+                    <div class="news__articles__third__hidden">
+                        <div class="news__articles__third__hidden__icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <a href="http://www.facebook.com">http://www.facebook.com</a>
                         
-                        <!-- <button class="news__articles__third__bottom__button">Share</button> -->
 
                     </div>
                 </div>
@@ -398,12 +425,22 @@
                             <img src="../images/news-2.png" alt="">
                         </div>
                     </div>
+                    <input type="checkbox" id="menuToggle2">
                     <div class="news__articles__third__bottom news__articles__third__bottom2">
-                        <p class="news__articles__third__bottom__title">The Standard Chunk of Fun</p>
+                        <p class="news__articles__third__bottom__title">Making the Finals</p>
                         <p class="news__articles__third__bottom__author">By Adam Rose on 17 Apr 2017</p>
                         <p class="news__articles__third__bottom__description">Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
-                        <button class="news__articles__third__bottom__button">Share</button>
+            
+                        <label for="menuToggle2" class="menu-icon news__articles__third__bottom__button">Share</label>
 
+                    </div>
+                    <div class="news__articles__third__hidden">
+                        <div class="news__articles__third__hidden__icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <a href="http://www.facebook.com">http://www.facebook.com</a>
+                    
+                    
                     </div>
                 </div>
                 
@@ -413,24 +450,24 @@
                             <img src="../images/news-1.png" alt="">
                         </div>
                     </div>
+                    <input type="checkbox" id="menuToggle3">
                     <div class="news__articles__third__bottom news__articles__third__bottom3">
-                        <p class="news__articles__third__bottom__title">How To Build Your Event</p>
+                        <p class="news__articles__third__bottom__title">2018 NBA Champs</p>
                         <p class="news__articles__third__bottom__author">By Seth Rollins on 22 Apr 2017</p>
                         <p class="news__articles__third__bottom__description">Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
-                        <button class="news__articles__third__bottom__button">Share</button>
+                        <label for="menuToggle3" class="menu-icon news__articles__third__bottom__button">Share</label>
 
 
                     </div>
+                    <div class="news__articles__third__hidden">
+                        <div class="news__articles__third__hidden__icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <a href="http://www.facebook.com">http://www.facebook.com</a>            
+                    </div>
                 </div>
-                
-
-
 
             </div>
-
-
-
-
 
         </div>
     </section>
@@ -498,14 +535,9 @@
                 <div class="box box1"></div>
                 <div class="box box2"></div>
     
-    
-    
-    
-    
-            </div>
-            </div>
 
-
+            </div>
+        </div>
 
     </footer>
 </body>

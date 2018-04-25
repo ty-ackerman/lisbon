@@ -11,6 +11,12 @@
     }
     form {
         margin:40px auto 0 auto;
+        @media (max-width: 650px) {
+            display:flex;
+            flex-flow:column wrap;
+            justify-content:center; 
+            align-items: center;
+        }
         .get-email {
             border-radius:5px 0 0 5px;
             border:solid 1px $white;
@@ -19,6 +25,18 @@
             line-height:25px;
             width:500px;
             border-right:none;
+            @media (max-width: 1000px) {
+                width: 300px;
+            }
+            @media (max-width: 650px) {
+                border-radius:5px 5px 5px 5px;
+                text-align:center;
+            }
+            @media (max-width: 450px) {
+                width:200px;
+            }
+            
+
         }
         .submit-subscribe {
             background: $pink;
@@ -34,6 +52,13 @@
             line-height:24px;
             width:140px;
             transition:$transition;
+            @media (max-width: 650px) {
+                width:300px;
+                border-radius:5px 5px 5px 5px;
+            }
+            @media (max-width: 450px) {
+                width:200px;
+            }
             &:active {
                 background:none;;
                 border:$purple solid 1px;

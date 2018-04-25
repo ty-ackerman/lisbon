@@ -24,15 +24,30 @@
    display:flex;
    flex-flow:row wrap;
    padding:20px;
+   @media (max-width:850px) {
+       flex-flow:column wrap;
+   }
+
+   @media (min-width:640px) and (max-width:850px) {
+        margin:0 50px;
+   }
+
    &__third2 {
        margin:0 20px;
+       @media (max-width:850px) {
+           margin:15px 0;
+       }
    }
     &__third {
-        width:calc(33.333% - (40px / 3));
         background: #fafafa;
         padding:50px 0;
         border:solid 1px #ececec;
         transition:$transition;
+        position:relative;
+            overflow:hidden;
+        @media (min-width:851px) {
+            width:calc(33.333% - (40px / 3));
+        }
         &:hover {
             box-shadow: 10px 2px 18px 5px rgba(0, 0, 0, 0.2);
             transform:scale(1.02);
@@ -65,6 +80,10 @@
             list-style:none;
             width:100%;
             padding-left:0;
+            @media (max-width:1100px) {
+                display:none;
+
+            }
             &__item {
                 width:100%;
                 border-top:#bdbdbd dashed 1px;
@@ -72,6 +91,13 @@
                 color:$grey;
                 @include fontSize(15);
                 padding:20px 50px;
+                @media (min-width:851px) and (max-width:1100px) {
+                    @include fontSize(12);
+                    padding:10px 30px;
+                }
+                @media (max-width:850px) {
+                    text-align:center;
+                }
             }
         }
 
@@ -95,3 +121,44 @@
         }
     }
 }
+
+.pricing__options__third--best{
+    background:$purple;
+    position:absolute;
+    top:18px;
+    right:-46px;
+    transform:rotate(45deg);
+    font-family: $raleway;
+    color:$white;
+    font-weight: 500;
+    padding:10px 40px;
+    @include fontSize(13);
+    @media (min-width:851px) and (max-width:1050px) {
+        top:12px;
+        right:-45px;
+        @include fontSize(10);
+    }
+}
+
+
+.see-details-button {
+    cursor: pointer;
+}
+
+
+@media (max-width:1100px) {
+    #see-details1:checked + ul {
+        display:block;
+    }
+    
+    #see-details2:checked + ul {
+        display:block;
+    }
+    #see-details3:checked + ul {
+        display:block;
+    }
+
+    
+}
+
+

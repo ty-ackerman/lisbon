@@ -4,11 +4,34 @@
     padding:120px 0;
     &__images {
         width:70px;
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        @media (max-width: 700px) {
+            flex-direction:row;
+            width:80%;
+            margin:0 auto;
+            padding-bottom:20px;
+        }
+        @media (max-width: 500px) {
+            display:none
+        }
+
     }
     &__message {
         width:40%;
         position:relative;
         margin-left:100px;
+        @media (max-width: 1000px) {
+            width:60%;
+
+        }
+        @media (max-width: 700px) {
+            margin:0 auto;
+            width:80%;
+        }
+
+        
         &::before {
             content: "“";
             @include fontSize(110);
@@ -50,10 +73,28 @@
         border-radius:50%;
         border:5px solid transparent;
         transition:$transition;
+        height:70px;
+        width: 70px;
         &:hover {
             border:5px solid #f2f2f2;
             transform:scale(1.2);
             box-shadow: 10px 2px 18px 5px rgba(0, 0, 0, 0.2);
         }
     }
+}
+
+//Responsiveness
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }
